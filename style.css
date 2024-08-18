@@ -38,7 +38,17 @@ div.header button {
   margin-left: -4px;
   color: rgb(72, 72, 72);
   cursor: pointer;
+  transition: all 0.3s;
 }
 div.header button:hover {
   background-color: rgb(198, 198, 198);
+}
+ul {
+  list-style-type: none;
+  text-align: left;
+  font-size: 1.3em;
+}
+ul li {
+  background-color: rgb(227, 227, 227);
+  padding: 10px 40px 10px;
 }
