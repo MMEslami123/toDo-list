@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+div.container {
+  width: 50%;
+  text-align: center;
+}
+div.header {
+  background-color: orange;
+  padding: 16px 0px;
+}
+div.header h1 {
+  font-size: 3em;
+  color: white;
+  margin: 10px 0px;
+}
+div.header input {
+  width: 70%;
+  font-size: 1.3em;
+  border: none;
+  outline: none;
+  padding: 2px 10px;
+}
+div.header button {
+  width: 20%;
+  font-size: 1.3em;
+  border: none;
+  outline: none;
+  padding: 2px 10px;
+  margin-left: -4px;
+  color: rgb(72, 72, 72);
+  cursor: pointer;
+}
+div.header button:hover {
+  background-color: rgb(198, 198, 198);
+}
