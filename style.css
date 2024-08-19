@@ -53,9 +53,21 @@ ul li {
   padding: 10px 40px 10px;
   cursor: pointer;
   position: relative;
+  transition: all 0.5s;
 }
 ul li:hover {
   background-color: rgb(198, 198, 198);
+}
+ul li.active {
+  background-color: rgb(90, 90, 90);
+  text-decoration: line-through;
+  color: white;
+}
+ul li.active::before {
+  content: "\f00c";
+  font-family: "fontawesome";
+  position: absolute;
+  left: 15px;
 }
 .trash-bin {
   position: absolute;

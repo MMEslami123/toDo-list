@@ -8,9 +8,12 @@ function addTask() {
   input.value = "";
 }
 ulist.addEventListener("click", (event) => {
-  let target = event.target.parentNode.parentNode;
-  if (target.nodeName == "LI") {
-    target.style = "display: none";
+  let listTarget = event.target;
+  if (listTarget.nodeName == "I") {
+    listTarget.parentNode.parentNode.style = "display: none";
+  }
+  if (listTarget.nodeName == "LI") {
+    listTarget.classList.toggle("active");
   }
 });
 function creatItem(text) {
