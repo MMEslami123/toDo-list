@@ -4,8 +4,12 @@ const ulist = document.querySelector("ul");
 
 button.addEventListener("click", addTask);
 function addTask() {
-  creatItem(input.value);
-  input.value = "";
+  if (input.value != "") {
+    creatItem(input.value);
+    input.value = "";
+  } else {
+    alert("please add a task...");
+  }
 }
 ulist.addEventListener("click", (event) => {
   let listTarget = event.target;
