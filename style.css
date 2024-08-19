@@ -51,4 +51,36 @@ ul {
 ul li {
   background-color: rgb(227, 227, 227);
   padding: 10px 40px 10px;
+  cursor: pointer;
+  position: relative;
+}
+ul li:hover {
+  background-color: rgb(198, 198, 198);
+}
+.trash-bin {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.trash-bin:hover {
+  color: red;
+  animation: shake 0.2s 3;
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
